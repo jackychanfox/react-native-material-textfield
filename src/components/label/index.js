@@ -113,6 +113,7 @@ export default class Label extends PureComponent {
       <Animated.View style={[styles.container, containerStyle]}>
         <Animated.Text style={[styles.text, style, textStyle]} {...props}>
           {label}
+          {props.isMandatory==true&&<Text style={{color:'red'}}> *</Text>}
         </Animated.Text>
       </Animated.View>
     );
