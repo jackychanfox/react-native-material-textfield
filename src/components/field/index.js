@@ -648,6 +648,7 @@ export default class TextField extends PureComponent {
       errorColor,
       containerStyle,
       inputContainerStyle: inputContainerStyleOverrides,
+      isMandatory
     } = this.props;
 
     let restricted = this.isRestricted();
@@ -689,6 +690,7 @@ export default class TextField extends PureComponent {
 
       focusAnimation,
       labelAnimation,
+      isMandatory
     };
 
     let lineProps = {
