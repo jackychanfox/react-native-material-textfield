@@ -627,7 +627,7 @@ export default class TextField extends PureComponent {
         onContentSizeChange={this.onContentSizeChange}
         onFocus={this.onFocus}
         onBlur={this.onBlur}
-        value={this.value()}
+        value={this.props.value}
         ref={this.inputRef}
       />
     );
